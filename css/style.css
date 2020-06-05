@@ -75,7 +75,7 @@ a {
   padding-right: 15px; */
 
   outline: 1px solid green;
-  padding: 94px 0px;
+
 }
 
 header .section {
@@ -83,12 +83,16 @@ header .section {
   padding-bottom: 25px;
 }
 
-.no-padding.container {
+.no-padding {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 /* Portfolio start*/
+.portfolio {
+  background-color: tomato;
+
+}
 .cover-p {
   background-color: var(--background-blue);
   color: var(--secondary-text-color);
@@ -97,12 +101,21 @@ header .section {
   line-height: 1.56;
 }
 
+.project-img {
+  margin-bottom: 20px;
+
+}
+
 .project-title {
+  margin-bottom: 4px;
+
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .project-group {
+  padding-bottom: 20px;
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -184,12 +197,27 @@ button:focus {
 
 .button.primary {
   background-color: var(--accent-color);
-  color: var(--secondary-text-color);
+  color: var(--title-text-color);
 }
 
 .button.secondary {
-  background-color: var(--filter-bg-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  margin-bottom: 50px;
+
+  background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+ background-color: var(--accent-color);
+ color: var(--secondary-text-color);
+
 }
 
 .button.submit {
@@ -331,7 +359,7 @@ ul .feature.list {
 }
 
 .team-text {
-margin-bottom: 16px;
+  padding-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
