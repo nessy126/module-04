@@ -63,7 +63,7 @@ a {
 }
 
 .section {
-  outline: 1px solid;
+  outline: 2px solid red;
   padding: 94px 0px;
 }
 
@@ -78,7 +78,7 @@ a {
   padding: 94px 0px;
 }
 
-header .container {
+header .section {
   padding-top: 25px;
   padding-bottom: 25px;
 }
