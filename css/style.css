@@ -7,7 +7,7 @@ p #757575;
 Corner Radius: 4px
 
 цвет при наведении на карточку rgba(33, 150, 243, 0.9) */
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
@@ -19,7 +19,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 :root {
   --primary-text-color: #757575;
@@ -236,6 +236,10 @@ button:focus {
 header {
   margin: 0;
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -255,30 +259,68 @@ header {
   color: var(--secondary-text-color);
 }
 
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  outline: 1px solid rgb(12, 12, 0);
+  background-color: rgb(233, 212, 144);
+}
+
 .site-nav {
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  display: flex;
+  margin-left: 85px;
+}
+.contacts .item {
+  
+  outline: 1px solid rgb(12, 12, 0);
+  background-color: rgb(233, 212, 144);
+}
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
-.site-nav.contact {
+.contacts .item + .item {
+  margin-left: 30px;
+}
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+ .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
-
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contact + .contact {
+  margin-left: 50px;
 }
 
-.site-nav:visited,
+.link:visited,
 .current:visited {
   color: var(--title-text-color);
 } 
 
-.site-nav:hover,
-.site-nav:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
-a.site-nav.current,
-.site-nav.contact:hover,
-.site-nav.contact:focus {
+a.link.current      {
+color: var(--accent-color);
+}
+
+.contacts .contact:hover,
+.contacts .contact:focus {
 color: var(--accent-color);
 }
 
