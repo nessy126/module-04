@@ -244,6 +244,10 @@ header {
   background-color: rgb(233, 212, 144); */
 }
 
+.main-nav .logo {
+  display: block;
+}
+
 .site-nav {
   display: flex;
   margin-left: 85px;
@@ -386,6 +390,9 @@ ul .feature.list {
   margin-right: 0;
 }
 
+.products-img {
+  display: block;
+}
 
 
 /* Team */
