@@ -610,6 +610,7 @@ address {
 } */
 
 .cover-p {
+  padding: 63px 24px;
   background-color: var(--background-blue);
   color: var(--secondary-text-color);
 
