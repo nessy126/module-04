@@ -37,6 +37,7 @@ img {
   --border-input-email-shaddow: rgba(0, 0, 0, 0.15);
   --border-delimiter: rgba(255, 255, 255, 0.1);
   --border-portfolio-card: #eee;
+  --top-line: #ececec;
 
   }
   
@@ -587,6 +588,10 @@ address {
 }
 
 /* Portfolio start*/
+
+.section.portfolio {
+  border-top: 1px solid var(--top-line);
+}
 
 .container-portfolio {
   /* background-color: teal; */
