@@ -214,6 +214,7 @@ header {
   align-items: center;
 }
 .logo {
+  display: block;
   margin-top: 25px;
   margin-bottom: 25px;
 
@@ -222,6 +223,10 @@ header {
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.logo  a{
+  display: block;
 }
 
 .logo-span {
@@ -553,10 +558,11 @@ address {
   line-height: 1.56;
 }
 
-/* .project-img {
-  margin-bottom: 20px;
-
-} */
+.client-img,
+.project-img {
+  /* margin-bottom: 20px; */
+  display: block;
+}
 
 .project-title {
   margin-bottom: 4px;
