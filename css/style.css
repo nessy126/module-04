@@ -70,9 +70,9 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   /* outline: 1px solid green; */
 
@@ -501,10 +501,27 @@ address {
 
   line-height: 1.71;
 }
+
+.footer-left p {
+  margin-bottom: 9px;
+  margin-top: 0;
+}
 .footer-center p,
 .footer-right p {
   margin: 0;
 }
+.footer-right {
+  margin-right: 93px;
+}
+
+.footer-container .footer-right {
+  width: calc((100% - 30px) / 2);
+  justify-content: flex-end;
+}
+
+/* .footer-center {
+  margin-right: 93px;
+} */
 
 .logo-footer {
   margin-top: 0;
