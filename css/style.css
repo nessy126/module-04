@@ -36,6 +36,7 @@ img {
   --border-input-email: rgba(255, 255, 255, 0.3);
   --border-input-email-shaddow: rgba(0, 0, 0, 0.15);
   --border-delimiter: rgba(255, 255, 255, 0.1);
+  --border-portfolio-card: #eee;
 
   }
   
@@ -596,7 +597,13 @@ address {
   justify-content: center;
 }
 
+.cart-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-portfolio-card);
+  border-right: 1px solid var(--border-portfolio-card);
+  border-bottom: 1px solid var(--border-portfolio-card);
 
+}
 
 /* .filter-button:nth-child(5n) {
   margin-right: 0;
