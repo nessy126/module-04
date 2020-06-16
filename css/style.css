@@ -35,6 +35,7 @@ img {
   --background-grey: rgba(47, 48, 58, 0.8);
   --border-input-email: rgba(255, 255, 255, 0.3);
   --border-input-email-shaddow: rgba(0, 0, 0, 0.15);
+  --border-delimiter: rgba(255, 255, 255, 0.1);
 
   }
   
@@ -487,6 +488,8 @@ address {
 }
 
 .footer-container {
+  border-bottom: 1px solid var(--border-delimiter);
+
   display: flex;
   flex-direction: row;
   justify-content: stretch;
