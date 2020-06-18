@@ -208,9 +208,6 @@ button:focus {
   line-height: 1.88;
 }
 
-.kind-products {
-  line-height: 1.14;
-}
 
 /* Header */
 header {
@@ -314,26 +311,43 @@ color: var(--accent-color);
 /* Hero */
 
 .hero {
-  background-color: var(--footer-bg-color);
   text-align: center;
 }
 
-.hero-title {
-  color: var(--secondary-text-color);
+.overlay {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
+  background-image: linear-gradient(
+    to right,
+    var(--background-grey), 
+    var(--background-grey)
+  ), 
+  url("../images/hero-img-s.jpg");
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .button.hero {
-  
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 
@@ -341,6 +355,7 @@ color: var(--accent-color);
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+
 
 /* Feature section */
 
@@ -552,6 +567,18 @@ address {
   background-color: var(--footer-bg-color);
 }
 
+.button > .icon {
+  display: inline-flex;
+  align-items: center;
+  margin-top: ;
+ padding: 10px 10px;
+  width: 24px;
+  height: 24px;
+    outline: 1px solid #fff;
+  background-image: url('../images/icon-send.svg');
+  background-repeat: no-repeat;
+  align-items: center;
+}
 /* .form {
   display: inline-block;
 } */
