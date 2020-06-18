@@ -173,14 +173,12 @@ button:focus {
 }
 
 .button.secondary {
+  margin-right: 8px;
   padding: 6px 22px;
   border-radius: 4px;
 
-  margin-right: 8px;
-
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
-
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
@@ -198,16 +196,28 @@ button:focus {
 }
 
 .button.submit {
-  margin-left: 12px;
-
+  display: inline-flex;
+  margin-left: 8px;
+  padding: 10px 28px;
   min-width: 200px;
+  align-items: center;
+
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
-
-  font-weight: 900;
-  line-height: 1.88;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
+.button > .icon {
+  margin-left: 10px;
+ 
+  width: 24px;
+  height: 24px;
+  /* outline: 1px solid #fff; */
+  background-image: url('../images/icon-send.svg');
+  background-repeat: no-repeat;
+ }
 
 /* Header */
 header {
@@ -567,18 +577,6 @@ address {
   background-color: var(--footer-bg-color);
 }
 
-.button > .icon {
-  display: inline-flex;
-  align-items: center;
-  margin-top: ;
- padding: 10px 10px;
-  width: 24px;
-  height: 24px;
-    outline: 1px solid #fff;
-  background-image: url('../images/icon-send.svg');
-  background-repeat: no-repeat;
-  align-items: center;
-}
 /* .form {
   display: inline-block;
 } */
