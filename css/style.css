@@ -56,8 +56,6 @@ body {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
   padding-left: 0;
 
   }
@@ -177,7 +175,7 @@ button:focus {
 .button.secondary {
   padding: 6px 22px;
   border-radius: 4px;
-  margin-bottom: 50px;
+
   margin-right: 8px;
 
   background-color: var(--secondary-bg-color);
@@ -224,16 +222,18 @@ header {
 }
 .logo {
   display: block;
-  margin-top: 25px;
-  margin-bottom: 25px;
+
 
   color: var(--accent-color);
-
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
 }
 
+.logo-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .logo  a{
   display: block;
 }
@@ -251,6 +251,7 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
   
+  color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
 
@@ -297,11 +298,6 @@ header {
   margin-left: 50px;
 }
 
-.link:visited,
-.current:visited {
-  color: var(--title-text-color);
-} 
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -318,12 +314,7 @@ color: var(--accent-color);
 /* Hero */
 
 .hero {
-  /* background: background-image background-color background-position;
-  background: url("./images/hero-img-s.jpg") var(--background-grey) 0px 80px; */
-  background-image: url('./images/hero-img-s.jpg');
-  background-color: var(--background-grey);
-  background-position: 0px 80px;
-  background-size: 1600px 600px;
+  background-color: var(--footer-bg-color);
   text-align: center;
 }
 
@@ -438,7 +429,7 @@ ul .feature.list {
 }
 
 .team-text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -496,16 +487,17 @@ address {
 }
 
 .footer-container {
+  padding-top: 48px;
   align-items: baseline;
   margin-bottom: 28px;
 
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-between;
 }
 
 .footer-left {
-  margin-top: 48px;
+
   margin-right: 69px;
 }
 
@@ -520,27 +512,15 @@ address {
   flex-direction: column;
 }
 
-.footer-center,
-.footer-right {
-  margin-top: 56px;
- }
 .footer-contact {
   color: var(--prelast-text-color);
-
   line-height: 1.71;
 }
 
-.footer-left p {
-  margin-bottom: 9px;
-  margin-top: 0;
-}
-.footer-center p,
-.footer-right p {
-  margin-top: 0;
-}
 .footer-right {
-  /* margin-right: 93px;
-  width: calc((100% - 60px) / 2); */
+  margin-left: auto;
+  /* margin-right: 93px; */
+  /* width: calc((100% - 22px) / 2); */
 }
 
 .logo-footer {
@@ -554,8 +534,8 @@ address {
 }
 .footer-p {
   margin-bottom: 21px;
-  color: var(--secondary-text-color);
 
+  color: var(--secondary-text-color);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -603,6 +583,7 @@ address {
 }
 
 .filters {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -643,8 +624,6 @@ address {
 }
 
 .project-group {
-  padding-bottom: 20px;
-
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
