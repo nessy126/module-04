@@ -209,14 +209,18 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-.button > .icon {
+.button.submit::after {
   margin-left: 10px;
- 
   width: 24px;
   height: 24px;
   /* outline: 1px solid #fff; */
   background-image: url('../images/icon-send.svg');
   background-repeat: no-repeat;
+  content: "";
+}
+
+.button > .icon {
+
  }
 
 /* Header */
@@ -288,6 +292,9 @@ header {
 }
 .contacts {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
     margin-left: auto;
 }
 
@@ -303,6 +310,27 @@ header {
 }
 .contact + .contact {
   margin-left: 50px;
+}
+
+.contacts > .item::before {
+  display: flex;
+  flex-direction: row;
+ 
+  content: "";
+  width: 16px;
+  height: 12px;
+
+}
+.contacts > .item:nth-child(1)::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/mail.svg);
+}
+
+.contacts > .item:nth-child(2)::before {
+  width: 10px;
+  height: 15px;
+  background-image: url(../images/phone.svg);
 }
 
 .site-nav .link:hover,
@@ -403,6 +431,51 @@ ul .feature.list {
   border-right-color: tomato;
   outline: red;
   margin-right: 30px;
+}
+
+.feature-list > .item::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  
+  
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .feature-list > .item:nth-child(1)::before {
+  background-image: url(../images/feature-1.svg);
+}
+
+.feature-list > .item:nth-child(2)::before {
+  background-image: url(../images/feature-2.svg);
+}
+
+.feature-list > .item:nth-child(3)::before {
+  background-image: url(../images/feature-3.svg);
+}
+
+.feature-list > .item:nth-child(4)::before {
+  background-image: url(../images/feature-4.svg);
+} */
+
+.icon-antenna-1::before {
+  background-image: url(../images/feature-1.svg);
+}
+
+.icon-clock-1::before {
+  background-image: url(../images/feature-2.svg);
+}
+
+.icon-diagram-1::before {
+  background-image: url(../images/feature-3.svg);
+}
+
+.icon-astronaut-1::before {
+  background-image: url(../images/feature-4.svg);
 }
 
 .feature-list .item:nth-child(4n) {
