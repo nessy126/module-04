@@ -57,7 +57,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-
+  margin-left: 0;
+  margin-right: 0;
   }
 
 a {
@@ -545,6 +546,30 @@ ul .feature.list {
   text-align: center;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-link {
+  background-color: rebeccapurple;
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  background-color: red;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 24px;
+  fill: #fff;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var (var(--accent-color));
+}
 /* team-list */
 
 .team-list {
@@ -558,6 +583,7 @@ ul .feature.list {
 .team-list .member:nth-child(4n) {
   margin-right: 0;
 }
+
 
 /* Clientes */
 .clients {
@@ -576,6 +602,16 @@ ul .feature.list {
 
 .client .img {
   margin-bottom: 0;
+}
+
+.team-social {
+  padding: 0;
+  border: none;
+  fill: var(--accent-color);
+}
+.instagram-team {
+  width: 44px;
+  height: 44px;
 
 }
 
