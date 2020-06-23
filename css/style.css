@@ -328,7 +328,7 @@ header {
 .contacts > .item:nth-child(1)::before {
   width: 16px;
   height: 12px;
-  background-image: url(../images/envelope.svg);
+  /* background-image: url(../images/envelope.svg); */
 }
 
 .contacts > .item:nth-child(2)::before {
@@ -545,30 +545,43 @@ ul .feature.list {
   background-color: var(--primary-bg-color);
   text-align: center;
 }
-
-.social-links {
+.social-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 24px;
 }
-.social-link {
-  background-color: rebeccapurple;
-  border-radius: 50%;
+.social-links:hover {
+/* fill: #fff; */
+}
+.social-links:not(:last-child) {
+  margin-right: 10px;
+  
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  /* fill: #fff; */
 }
 
-.social-link:hover {
-  background-color: red;
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 
 .social-icon {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 24px;
-  fill: #fff;
+  display: block;
+  --color1: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
-  fill: var (var(--accent-color));
+.social-icon:hover {
+  fill: #fff;
+  color: #fff;
 }
 /* team-list */
 
@@ -612,7 +625,30 @@ ul .feature.list {
 .instagram-team {
   width: 44px;
   height: 44px;
+}
 
+.logo-list {
+  display: flex;
+  /* outline: 1px solid red; */
+}
+
+.logo-client {
+  width: 170px;
+  height: 90px;
+  /* outline: 1px solid green; */
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  padding: 20px 40px;
+}
+.logo-client:not(:last-child) {
+  margin-right: 30px;
+}
+.logo-client a {
+  display: block;
+}
+.logo1-icon {
+  width: 45px;
+  height: 50px;
 }
 
 /* Footer */
@@ -645,6 +681,16 @@ address {
 .footer-center {
   margin-right: 93px;
 }
+
+.footer-center .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-center .social-link:hover,
+.footer-center .social-link:focus {
+  background-color: var(--accent-color);
+}
+
 
 .footer-right,
 .footer-center,
