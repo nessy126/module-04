@@ -188,7 +188,7 @@ header {
   margin: 0;
 }
 
-.main-nav {
+.main-nav nav{
   display: flex;
   align-items: center;
 }
@@ -241,9 +241,8 @@ header {
 }
 
 .contacts .item {
-  display: flex;
-  align-items: center;
-  
+  /* display: flex;
+  align-items: center; */
   /* outline: 1px solid rgb(12, 12, 0);
   background-color: rgb(233, 212, 144); */
 }
@@ -258,9 +257,9 @@ header {
 
 .contacts {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
  .contact {
@@ -288,7 +287,7 @@ header {
 
 .contact svg {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 
 .contacts .contact:hover,
@@ -308,10 +307,10 @@ header {
   background-image: url(../images/phone.svg); */
 }
 
-.contacts .link:hover::before {
+/* .contacts .link:hover::before {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -490,8 +489,12 @@ ul .feature.list {
   background-color: var(--secondary-bg-color);
 }
 
+.team-content {
+  padding: 30px 32px 24px;
+}
+
 .team img {
-  margin: 0 0 30px 0;
+  margin: 0;
   max-width: 100%
 }
 
@@ -515,7 +518,8 @@ ul .feature.list {
 }
 
 .member {
-  width: calc((100% - 30px * 3) / 4);
+  /* width: calc((100% - 30px * 3) / 4); */
+  width: 270px;
   background-color: var(--primary-bg-color);
   text-align: center;
 
@@ -525,10 +529,9 @@ ul .feature.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 24px;
 }
 
-.social-links:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 10px;
   
 }
@@ -566,7 +569,6 @@ ul .feature.list {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 32px 24px;
 }
 
 .team-list .member {
@@ -578,23 +580,6 @@ ul .feature.list {
 }
 
 /* Clientes */
-.clients {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.clients .client {
-  width: calc((100% - 5*30px) / 6);
-  margin-right: 30px;
-}
-
-.clients .client:last-child {
-  margin-right: 0;
-}
-
-.client .img {
-  margin-bottom: 0;
-}
 
 .team-social {
   padding: 0;
@@ -602,13 +587,9 @@ ul .feature.list {
   fill: var(--accent-color);
 }
 
-.instagram-team {
-  width: 44px;
-  height: 44px;
-}
-
 .logo-list {
   display: flex;
+  flex-wrap: wrap;
   /* outline: 1px solid red; */
 }
 
@@ -631,8 +612,8 @@ ul .feature.list {
 }
 
 .logo-link {
-    display: block;
-    justify-content: center;
+  display: block;
+  justify-content: center;
 }
 
 .logo-svg {
