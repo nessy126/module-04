@@ -279,24 +279,33 @@ header {
   margin-left: 50px;
 }
 
-.contacts > .item::before {
+/* .contacts > .item::before {
   margin-right: 10px;
   content: "";
   width: 16px;
   height: 12px;
+} */
+
+.contact svg {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
-.contacts > .item:nth-child(1)::before {
+.contacts .contact:hover,
+.contacts .contact:focus {
+  fill: var(--accent-color);
+}
+
+/* .contacts > .item:nth-child(1)::before {
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
-  
-}
+} */
 
-.contacts > .item:nth-child(2)::before {
+/* .contacts > .item:nth-child(2)::before {
   width: 10px;
   height: 15px;
-  background-image: url(../images/phone.svg);
+  background-image: url(../images/phone.svg); */
 }
 
 .contacts .link:hover::before {
