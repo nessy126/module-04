@@ -1,4 +1,4 @@
-.logo {
+[class^="logo"], [class*=" logo"] {
   display: inline-block;
   width: 1em;
   height: 1em;
